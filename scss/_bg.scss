@@ -1,0 +1,35 @@
+.body{
+    width: 99vw;
+    min-height: 215vh;
+    background: map-get($map:$colors, $key: 'main');
+}
+.bodyW{
+    background: map-get($map:$colorsW, $key: 'main');
+}
+#wave1{
+    position: relative;
+    height: 100vh;
+    left: -45%;
+    top: 65%;
+}
+#wave2{
+    position: relative;
+    height: 100vh;
+    left: 45%;
+    top: -65%;
+}
+.span{
+    top: 0px;
+    z-index: -100;
+    position: fixed;
+    overflow: hidden;
+    padding: 5vh 5vw;
+    width: 90vw;
+    height: 90vh;
+}
+@media screen and (min-width: 2000px){
+    #wave2{
+        left: 60%;
+        top: -75%;
+    }
+}

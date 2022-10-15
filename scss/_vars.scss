@@ -2,6 +2,15 @@
 // font-family: 'Montserrat Alternates', sans-serif;
 // font-family: 'Exo 2', sans-serif;
 $colors:(
+    'main':#410353,
+    'secu': rgb(255, 255, 255),
+    'secut': rgba(219, 219, 219, 0.445),
+    'deta': #e333ff,
+    'deta2': #ff00a8,
+    't':#2727275d,
+    'dark':rgba(22, 22, 22, 0.616),
+);
+$colorsW:(
     'main':#2f2f2f,
     'secu': #ffff,
     'secut': rgba(255, 255, 255, 0.692),
@@ -9,11 +18,19 @@ $colors:(
     't':#2f2f2f9d,
     'dark':rgba(22, 22, 22, 0.616),
 );
-$colors2:(
-    'main':#2f2f2f,
-    'secu': #ffff,
-    'secut': rgba(255, 255, 255, 0.692),
-    'deta': #00ffff,
-    't':#2f2f2f9d,
-    'dark':rgba(22, 22, 22, 0.616),
-);
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@mixin flex($flex_d, $al_c, $ju_c, $al_i, $wr){
+    display: flex;
+    flex-direction: $flex_d;
+    align-content: $al_c;
+    align-items: $al_i;
+    justify-content: $ju_c;
+    flex-wrap: $wr;
+};
+.wit{
+    display: none;
+}

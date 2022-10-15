@@ -1,0 +1,66 @@
+body{
+    @include flex(column, space-around, space-around, center, wrap);
+}
+html::-webkit-scrollbar{
+    width: 5px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: map-get($map:$colors, $key: 'secut');
+}
+main{
+    backdrop-filter: blur(20px);
+    background-color: map-get($map:$colors, $key: 't');
+    border-radius: 30px;
+    width: 85vw;
+    height: 80vh;
+}
+#inicio{
+    margin-top: 20px;
+    backdrop-filter: blur(20px);
+    background-color: map-get($map:$colors, $key: 't');
+    border-radius: 30px;
+    width: 85vw;
+    height: 80vh;
+    @include flex(row-reverse, space-around, space-around, center, wrap);
+}
+#logo{
+    transition: 0.5s;
+    height: 50%;
+    width: auto;
+    &:hover{
+        transform: rotate(30deg);
+}
+}
+h1{
+    color: map-get($map:$colors, $key: 'secu');
+    font-family: 'Exo 2', sans-serif;
+    font-size: 7vh;
+    text-align:right;
+    text-transform: uppercase;
+}
+.t_link{
+    height: 100%;
+    width: 40%;
+    @include flex(column, center, center, end, wrap);
+}
+.more{
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+    padding: 5px 20px 5px 20px;
+    border:solid 2px map-get($map:$colors,$key: 'secu');
+    border-radius:10px;
+    background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2'));        
+    background-position: 0% 0%;         
+    background-repeat: no-repeat;        
+    background-size: 100% 0%; 
+    transition: 0.5s;
+    color: map-get($map:$colors, $key: 'secu');
+    &:hover{
+        color:map-get($map:$colors,$key: 'secu');
+        transition: 0.5s;
+        background-size: 100% 100%;
+}
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Montserrat+Alternates:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.wit {
+  display: none;
+}
+
+.body {
+  width: 99vw;
+  min-height: 215vh;
+  background: #410353;
+}
+
+.bodyW {
+  background: #2f2f2f;
+}
+
+#wave1 {
+  position: relative;
+  height: 100vh;
+  left: -45%;
+  top: 65%;
+}
+
+#wave2 {
+  position: relative;
+  height: 100vh;
+  left: 45%;
+  top: -65%;
+}
+
+.span {
+  top: 0px;
+  z-index: -100;
+  position: fixed;
+  overflow: hidden;
+  padding: 5vh 5vw;
+  width: 90vw;
+  height: 90vh;
+}
+
+@media screen and (min-width: 2000px) {
+  #wave2 {
+    left: 60%;
+    top: -75%;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(219, 219, 219, 0.445);
+}
+
+main {
+  backdrop-filter: blur(20px);
+  background-color: rgba(39, 39, 39, 0.3647058824);
+  border-radius: 30px;
+  width: 85vw;
+  height: 80vh;
+}
+
+#inicio {
+  margin-top: 20px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(39, 39, 39, 0.3647058824);
+  border-radius: 30px;
+  width: 85vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#logo {
+  transition: 0.5s;
+  height: 50%;
+  width: auto;
+}
+#logo:hover {
+  transform: rotate(30deg);
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Exo 2", sans-serif;
+  font-size: 7vh;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.t_link {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.more {
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2vh;
+  font-weight: 700;
+  padding: 5px 20px 5px 20px;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 10px;
+  background: linear-gradient(45deg, #e333ff, #ff00a8);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+.more:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  background-size: 100% 100%;
+}
+
+footer, .footer1 {
+  background-color: rgba(39, 39, 39, 0.3647058824);
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 85vw;
+  min-height: 90px;
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+}
+footer img, .footer1 img {
+  height: 5vh;
+  width: auto;
+  margin: 0px 9px 0 9px;
+}
+
+#redes_sociales {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 19%;
+}
+
+#copy {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.iconos_footer2 {
+  height: 4vh;
+  width: auto;
+  vertical-align: middle;
+}
+
+.footerScript {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+.footer1 {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

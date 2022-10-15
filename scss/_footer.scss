@@ -1,0 +1,36 @@
+footer{
+    background-color: map-get($map:$colors, $key: 't');
+    @include flex(row, space-around, space-around, center, wrap);
+    width: 85vw;
+    min-height: 90px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    & img{
+        height: 5vh;
+        width: auto;
+        margin: 0px 9px 0 9px;
+    }
+}
+#redes_sociales{
+    @include flex(row, space-around, space-between, center, wrap);
+    min-width: 19%;
+}
+
+#copy{
+    @include flex(column, space-around, center, center, wrap);
+}
+.iconos_footer2{
+    height: 4vh;
+    width : auto;
+    vertical-align:middle;
+}
+.footerScript{
+    color: map-get($map:$colors, $key: 'secu');
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+}
+.footer1{
+    @extend footer ;
+    width: 100%;
+}
