@@ -7,13 +7,6 @@ html::-webkit-scrollbar{
 html::-webkit-scrollbar-thumb{
     background-color: map-get($map:$colors, $key: 'secut');
 }
-main{
-    backdrop-filter: blur(20px);
-    background-color: map-get($map:$colors, $key: 't');
-    border-radius: 30px;
-    width: 85vw;
-    height: 80vh;
-}
 #inicio{
     margin-top: 20px;
     backdrop-filter: blur(20px);
@@ -63,4 +56,113 @@ h1{
         transition: 0.5s;
         background-size: 100% 100%;
 }
+}
+
+main{
+    @include flex(row, center, space-between, end, wrap);
+    width: 85vw;
+    height: 80vh;
+}
+.cal{
+    border-radius: 30px;
+    background-color: map-get($map:$colors, $key: 't');
+    height: 100%;
+    width: 450px;
+    backdrop-filter: blur(20px);
+    @include flex(column, center, center, end, wrap);
+}
+.res{
+    border-radius: 30px;
+    background-color: map-get($map:$colors, $key: 't');
+    height: 100%;
+    width: 800px;
+    backdrop-filter: blur(20px);
+}
+
+.buttons{
+    height: 80%;
+    width: 100%;
+    background-color: map-get($map:$colors, $key: 'dark');
+    display: grid;
+    grid-template-rows: repeat(5, 15%);
+    grid-template-columns: repeat(4, 20%);
+    gap: 4%;
+    justify-content: center;
+    align-content: center;
+    justify-items: start;
+    border-radius: 0px 0px 30px 30px;
+}
+.display{
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 17%;
+    width: 95%;
+    padding: 2.5% 2.5%;
+    font-family: 'Exo 2', sans-serif;
+    color: map-get($map:$colors, $key: 'secu');
+    font-weight: 900;
+    font-size: 7vh;
+}
+button{
+    color: map-get($map:$colors, $key: 'secu');
+    font-weight: 900;
+    font-size: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+#equal{
+    height: 225%;
+}
+#cero{
+    width: 220%;
+}
+#do{
+    position: relative;
+    left: 120%;
+}
+button{
+    background: none;
+    background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
+    transition: 0.3s;
+    background-repeat: no-repeat;
+}
+.number{
+    border: 2px map-get($map:$colors, $key: 'secu') solid;
+    background-size: 0% 100%; 
+    background-position: 0% 0%;
+    &:hover{
+        background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
+        border:  2px map-get($map:$colors, $key: 'secu') solid;
+        background-size: 100% 100%; 
+        background-position: 0% 0%;         
+        background-repeat: no-repeat;
+    }
+}
+.other{
+    border: 2px map-get($map:$colors, $key: 'deta2') solid;
+    background-size: 100% 0%; 
+    background-position: 00% 0%;
+    &:hover{
+        background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
+        border:  2px map-get($map:$colors, $key: 'secu') solid;
+        background-size: 100% 100%; 
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+    }
+}
+.calcu{
+    border: 2px map-get($map:$colors, $key: 'deta') solid;
+    background-size: 100% 0%; 
+    background-position: 100% 100%;
+    &:hover{
+        background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
+        border:  2px map-get($map:$colors, $key: 'secu') solid;
+        background-size: 100% 100%; 
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+    }
 }
