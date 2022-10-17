@@ -93,7 +93,7 @@ main{
     border-radius: 0px 0px 30px 30px;
 }
 .display{
-    overflow-x: auto;
+    overflow: auto;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -104,6 +104,16 @@ main{
     color: map-get($map:$colors, $key: 'secu');
     font-weight: 900;
     font-size: 7vh;
+}
+.display::-webkit-scrollbar{
+    height: 10px;
+}
+.display::-webkit-scrollbar-thumb{
+    background-color: map-get($map:$colors, $key: 'secut');
+}
+#display{
+    max-width: 90%;
+    margin: 0% 5%;
 }
 button{
     color: map-get($map:$colors, $key: 'secu');
@@ -129,6 +139,7 @@ button{
     background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
     transition: 0.3s;
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 .number{
     border: 2px map-get($map:$colors, $key: 'secu') solid;
