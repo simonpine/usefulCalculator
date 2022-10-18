@@ -76,13 +76,8 @@ main{
     @include flex(column, center, center, end, wrap);
 }
 .res{
-    border-radius: 30px;
-    background-color: map-get($map:$colors, $key: 't');
-    height: 89%;
-    width: 65%;
-    padding: 2.5% 2.5%;
-    backdrop-filter: blur(20px);
-    // @include flex(row, space-around, space-between, end, wrap);
+    height: 90%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 4%;
@@ -91,7 +86,15 @@ main{
     justify-items: start;
     overflow: auto;
 }
-
+.resMain{
+    @include flex(column, center, center, end, wrap);
+    height: 100%;
+    width: 65%;
+    border-radius: 30px;
+    background-color: map-get($map:$colors, $key: 't');
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
 .buttons{
     height: 80%;
     width: 100%;
@@ -104,6 +107,9 @@ main{
     align-content: center;
     justify-items: start;
     border-radius: 0px 0px 30px 30px;
+    @media screen and (min-width: 2000px){
+        height: 79%;
+    }
 }
 .display{
     overflow: auto;

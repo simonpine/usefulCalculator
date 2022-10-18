@@ -158,12 +158,8 @@ main {
 }
 
 .res {
-  border-radius: 30px;
-  background-color: rgba(39, 39, 39, 0.3647058824);
-  height: 89%;
-  width: 65%;
-  padding: 2.5% 2.5%;
-  backdrop-filter: blur(20px);
+  height: 90%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 4%;
@@ -171,6 +167,21 @@ main {
   align-content: center;
   justify-items: start;
   overflow: auto;
+}
+
+.resMain {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: end;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 65%;
+  border-radius: 30px;
+  background-color: rgba(39, 39, 39, 0.3647058824);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
 }
 
 .buttons {
@@ -185,6 +196,11 @@ main {
   align-content: center;
   justify-items: start;
   border-radius: 0px 0px 30px 30px;
+}
+@media screen and (min-width: 2000px) {
+  .buttons {
+    height: 79%;
+  }
 }
 
 .display {
