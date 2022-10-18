@@ -16,6 +16,10 @@ html::-webkit-scrollbar-thumb{
     height: 80vh;
     @include flex(row-reverse, space-around, space-around, center, wrap);
 }
+div{
+    width: fit-content;
+    height: fit-content;
+}
 #logo{
     transition: 0.5s;
     height: 50%;
@@ -67,16 +71,25 @@ main{
     border-radius: 30px;
     background-color: map-get($map:$colors, $key: 't');
     height: 100%;
-    width: 450px;
+    width: 27%;
     backdrop-filter: blur(20px);
     @include flex(column, center, center, end, wrap);
 }
 .res{
     border-radius: 30px;
     background-color: map-get($map:$colors, $key: 't');
-    height: 100%;
-    width: 800px;
+    height: 89%;
+    width: 65%;
+    padding: 2.5% 2.5%;
     backdrop-filter: blur(20px);
+    // @include flex(row, space-around, space-between, end, wrap);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 4%;
+    justify-content: center;
+    align-content: center;
+    justify-items: start;
+    overflow: auto;
 }
 
 .buttons{
@@ -176,4 +189,47 @@ button{
         background-position: 100% 100%;
         background-repeat: no-repeat;
     }
+}
+.card{
+    color: map-get($map:$colors, $key: 'secu');
+    border-radius: 10px;
+    height: auto;
+    background-color: map-get($map:$colors, $key: 'dark');
+    width: fit-content;
+    padding: 20px;
+    margin: 0;
+    @include flex(column, end, space-between, end, wrap);
+    overflow: auto;
+}
+.day{
+    font-size: 2.9vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+}
+h3{
+    font-size: 5vh;
+    font-weight: 300;
+    font-family: 'Exo 2', sans-serif;
+}
+#delete{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 30px;
+    background: linear-gradient(45deg,map-get($map:$colors, $key: 'del'), map-get($map:$colors, $key: 'del'));
+    background-position: 0% 0%;         
+    background-repeat: no-repeat;        
+    background-size: 100% 0%; 
+    transition: 0.5s;
+    color: map-get($map:$colors, $key: 'secu');
+    &:hover{
+        color:map-get($map:$colors,$key: 'secu');
+        transition: 0.5s;
+        background-size: 100% 100%;
+}     
+}
+.res::-webkit-scrollbar{
+    width: 10px;
+}
+.res::-webkit-scrollbar-thumb{
+    background-color: map-get($map:$colors, $key: 'secut');
 }
