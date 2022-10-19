@@ -36,13 +36,39 @@
         left: -75%;
         top: 75%;
     }
+    h1{
+        text-align: center;
+        width: 100%;
+    }
+    .t_link{
+        align-items: center
+    }
+    #logo{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 700px){
+    .more{
+        font-size: 15px;
+    }
+    #logo{
+        width: 50%;
+    }
     .res{
         grid-template-columns: repeat(1, auto);
         gap: 4%;
     }
     h1{
-     font-size: 6vh;
+        font-size: 40px;
+    }
+    #wave1{
+        left: -95%;
+        top: 95%;
+    }
+    footer{
+        padding: 20px 0px;
+    }
+    #copy{
+        margin: 20px 0px 10px 0px;
     }
 }

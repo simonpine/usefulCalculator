@@ -44,7 +44,7 @@ h1{
     margin-top: 20px;
     text-decoration: none;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: 700;
     padding: 5px 20px 5px 20px;
     border:solid 2px map-get($map:$colors,$key: 'secu');
@@ -159,38 +159,26 @@ button{
 }
 .number{
     border: 2px map-get($map:$colors, $key: 'secu') solid;
-    background-size: 0% 100%; 
-    background-position: 0% 0%;
+    background: none;
     &:hover{
         background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
-        border:  2px map-get($map:$colors, $key: 'secu') solid;
-        background-size: 100% 100%; 
-        background-position: 0% 0%;         
-        background-repeat: no-repeat;
+        border:  2px map-get($map:$colors, $key: 'secu') solid;       
     }
 }
 .other{
     border: 2px map-get($map:$colors, $key: 'deta2') solid;
-    background-size: 100% 0%; 
-    background-position: 00% 0%;
+    background: none;
     &:hover{
         background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
-        border:  2px map-get($map:$colors, $key: 'secu') solid;
-        background-size: 100% 100%; 
-        background-position: 0% 0%;
-        background-repeat: no-repeat;
+        border:  2px map-get($map:$colors, $key: 'secu') solid;       
     }
 }
 .calcu{
     border: 2px map-get($map:$colors, $key: 'deta') solid;
-    background-size: 100% 0%; 
-    background-position: 100% 100%;
+    background: none;
     &:hover{
         background: linear-gradient(45deg,map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta2')); 
-        border:  2px map-get($map:$colors, $key: 'secu') solid;
-        background-size: 100% 100%; 
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
+        border:  2px map-get($map:$colors, $key: 'secu') solid;       
     }
 }
 .card{
