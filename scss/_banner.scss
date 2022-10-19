@@ -26,7 +26,7 @@ div{
     width: auto;
     &:hover{
         transform: rotate(30deg);
-}
+    }
 }
 h1{
     color: map-get($map:$colors, $key: 'secu');
@@ -73,7 +73,7 @@ main{
     height: 100%;
     width: 27%;
     backdrop-filter: blur(20px);
-    @include flex(column, center, center, end, wrap);
+    @include flex(column, center, space-between, end, wrap);
 }
 .res{
     height: 90%;
@@ -96,7 +96,7 @@ main{
     overflow: hidden;
 }
 .buttons{
-    height: 80%;
+    height: 78%;
     width: 100%;
     background-color: map-get($map:$colors, $key: 'dark');
     display: grid;
@@ -107,9 +107,6 @@ main{
     align-content: center;
     justify-items: start;
     border-radius: 0px 0px 30px 30px;
-    @media screen and (min-width: 2000px){
-        height: 79%;
-    }
 }
 .display{
     overflow: auto;

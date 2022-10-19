@@ -1,0 +1,48 @@
+@media screen and (max-width: 1000px){
+    #main{
+        margin: 60px 0px;
+        height: auto;
+        flex-direction: column;
+    }
+    .cal{
+        height: 90vh;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .buttons{
+        height: 75%;
+    }
+    .resMain{
+        height: 90vh;
+        width: 100%;
+    }
+    #logo{
+        margin: 40px;
+        width: 70%;
+        height: auto;
+    }
+    .t_link{
+        width: 100%;
+        height: auto;
+    }
+    #inicio{
+        padding: 40px 0px;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 1400px){
+    #wave1{
+        left: -75%;
+        top: 75%;
+    }
+}
+@media screen and (max-width: 700px){
+    .res{
+        grid-template-columns: repeat(1, auto);
+        gap: 4%;
+    }
+    h1{
+     font-size: 6vh;
+    }
+}
