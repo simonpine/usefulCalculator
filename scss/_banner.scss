@@ -82,7 +82,6 @@ main{
     grid-template-columns: repeat(2, auto);
     gap: 4%;
     justify-content: center;
-    align-content: center;
     justify-items: start;
     overflow: auto;
 }
@@ -223,4 +222,8 @@ h3{
 }
 .res::-webkit-scrollbar-thumb{
     background-color: map-get($map:$colors, $key: 'secut');
+}
+.button_ret{
+    border: none;
+    background: none;
 }
