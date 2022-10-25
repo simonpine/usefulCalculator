@@ -60,11 +60,3 @@ del.addEventListener('click', () => {
     localStorage.clear()
         input.innerHTML = ''
 })
-
-const butRet = document.querySelectorAll(".button_ret");
-butRet.forEach((dig) => {
-    dig.addEventListener("click", () => {
-        const reInt = dig.innerText.split(' ')
-        display.innerText = reInt[2]
-    })
-})
