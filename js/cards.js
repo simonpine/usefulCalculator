@@ -24,7 +24,7 @@ function setCards() {
     butRe.forEach((dig) => {
         dig.addEventListener("click", () => {
             const reInt = dig.innerText.split(' ')
-            display2.innerText = reInt[2]
+            display2.innerText = reInt[0]
         })
     })
 }

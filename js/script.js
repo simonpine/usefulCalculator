@@ -36,9 +36,11 @@ calculatorDigit.forEach((dig) => {
         else if (dig.id === 'equal') {
             if((eval(display.innerText) === undefined)){
                 display.innerText = 'error'
+                setTimeout(() => { display.innerHTML = ''; }, 1500);
             }
             else if((eval(display.innerText) === Infinity)){
                 display.innerText = 'error'
+                setTimeout(() => { display.innerHTML = ''; }, 1500);
             }
             else{
             const preText = display.innerText
